@@ -1,5 +1,7 @@
 package io.matthewbelongia;
 
+import java.util.ArrayList;
+
 /**
  * Created by matthewb on 5/16/16.
  */
@@ -18,7 +20,10 @@ public class Main {
 
         phoneBook.sortPhoneBook();
         System.out.println("");
-        System.out.println(phoneBook.reverseLookUp(8675309));
+        ArrayList<Person> peopleFound = phoneBook.reverseLookUp(8675309);
+        for(Person p: peopleFound){
+            System.out.println(p.getName());
+        }
 
 
     }
