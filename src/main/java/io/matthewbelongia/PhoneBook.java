@@ -53,8 +53,8 @@ public class PhoneBook {
         List<Person> peopleByName = new ArrayList<Person>(registry.values());
         Collections.sort(peopleByName, new Comparator<Person>() {
             @Override
-            public int compare(Person o1, Person o2) {
-                return o1.getName().compareTo(o2.getName());
+            public int compare(Person person1, Person person2) {
+                return person1.getName().compareTo(person2.getName());
             }
         });
         for (Person p : peopleByName) {

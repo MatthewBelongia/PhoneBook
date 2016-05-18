@@ -30,9 +30,9 @@ public class Person {
     public void removePhoneNumber(Integer oldPhoneNumber){
         Iterator<Integer> iter = phoneNumbers.iterator();
         while(iter.hasNext()){
-            Integer integer = iter.next();
+            Integer phoneNum = iter.next();
 
-            if(integer.equals(oldPhoneNumber)){
+            if(phoneNum.equals(oldPhoneNumber)){
                 iter.remove();
             }
         }

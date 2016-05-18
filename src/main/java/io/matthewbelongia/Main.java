@@ -21,9 +21,11 @@ public class Main {
         phoneBook.sortPhoneBook();
         System.out.println("");
         ArrayList<Person> peopleFound = phoneBook.reverseLookUp(8675309);
+
         for(Person p: peopleFound){
             System.out.println(p.getName());
         }
+
 
 
     }
